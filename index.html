@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <title>Decodificador de Textos</title>
+  </head>
+  <body>
+    <main class="conteudo-principal">
+      <img src="assets/Logo.svg" alt="Logo" class="logo" />
+
+      <div class="principal" id="formulario">
+        <textarea
+          id="texto"
+          placeholder="Digite seu texto"
+          oninput="ajustarAlturaTextarea()"
+        ></textarea>
+        <div class="alerta" id="mensagem-alerta">
+          <p>
+            <i class="fas fa-exclamation-circle"></i>Apenas letras minúsculas e
+            sem acentos.
+          </p>
+        </div>
+        <button class="btn-Cripto" onclick="executarAcao('criptografar')">
+          Criptografar
+        </button>
+        <button class="btn-Descripto" onclick="executarAcao('descriptografar')">
+          Descriptografar
+        </button>
+      </div>
+
+      <div class="resultado" id="resultado-container">
+        <div id="mensagem-cripto">
+          <textarea id="resultado-texto" readonly></textarea>
+          <div id="imagem-resultado" class="mensagem-cripto">
+            <img
+              src="assets/High quality products 1 1.svg"
+              alt="Imagem Padrão"
+              class="garoto"
+            />
+            <p class="mensagem-padrao">
+              <strong>NENHUMA MENSAGEM<br />ENCONTRADA</strong>
+            </p>
+            <p class="mensagem-padrao-paragrafo">
+              Digite um texto que você deseja <br />
+              criptografar ou descriptografar
+            </p>
+          </div>
+        </div>
+        <div id="resultado-content">
+          <button
+            class="btnCopiar"
+            id="copiar-btn"
+            onclick="copiarParaAreaTransferencia()"
+          >
+            Copiar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>desenvolvido por &copy; 2024 Leandresson Fulco</footer>
+  </body>
+</html>

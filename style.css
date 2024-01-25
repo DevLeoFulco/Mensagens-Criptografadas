@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #d8dfe8;
+  height: 100vh;
+  margin: 20px;
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100px;
+  margin: 10px;
+  position: absolute;
+  top: 10;
+  left: 0;
+}
+
+.principal {
+  text-align: center;
+  margin-top: 20px;
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+#formulario textarea {
+  font-family: "Inter";
+  margin-left: 150px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 150%;
+  width: 100%;
+
+  border-radius: 8px;
+  margin-bottom: 7px;
+  resize: none;
+  overflow-y: hidden;
+}
+#texto::placeholder {
+  color: #0a3871;
+}
+
+.resultado {
+  align-self: stretch;
+  border-radius: 32px;
+  width: 400px;
+  height: 600px;
+  background: var(--White, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mensagem-padrao {
+  margin-top: 50px;
+  font-family: "Inter";
+  font-size: 18px;
+}
+.mensagem-padrao-paragrafo {
+  font-size: 12px;
+}
+
+#resultado-texto {
+  width: 280px;
+  height: 400px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.btnCopiar {
+  margin-top: 15px;
+  cursor: pointer;
+  color: #0a3871;
+  font-size: 16px;
+  width: 180px;
+  padding: 15px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  display: none;
+}
+
+.btn-Cripto {
+  margin-top: 415px;
+  background-color: #0a3871;
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 35px;
+  margin-left: 200px;
+  cursor: pointer;
+  width: 180px;
+  padding: 15px;
+  gap: 8px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+}
+
+.btn-Descripto {
+  margin-top: 15px;
+  cursor: pointer;
+  color: #0a3871;
+  font-size: 16px;
+  width: 180px;
+  padding: 15px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.alerta {
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 370px;
+  margin-bottom: -412px;
+  font-size: 10px;
+}
+
+.alerta i {
+  margin-right: 10px;
+}
